@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemy_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+display_name = "Jabalí"
+tint = Color(0.85, 0.45, 0.4, 1)
+shape = "boar"
+body_radius = 22.0
+base_health = 30.0
+speed = 45.0
+contact_damage = 10.0
+xp_value = 3
+unlock_time = 150.0
+spawn_weight = 1.0

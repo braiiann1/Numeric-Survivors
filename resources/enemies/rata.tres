@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemy_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+display_name = "Rata"
+tint = Color(0.78, 0.68, 0.55, 1)
+shape = "rat"
+body_radius = 15.0
+base_health = 8.0
+speed = 55.0
+contact_damage = 5.0
+xp_value = 1
+unlock_time = 0.0
+spawn_weight = 3.0

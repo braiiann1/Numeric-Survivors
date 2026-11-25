@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://shaders/crt.gdshader" id="1_crt"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_crt"]
+shader = ExtResource("1_crt")
+shader_parameter/curvature = 0.05
+shader_parameter/scanline_strength = 0.16
+shader_parameter/aberration = 0.9
+shader_parameter/vignette_strength = 0.55
+shader_parameter/grain = 0.022
+shader_parameter/flicker = 0.01
+shader_parameter/brightness = 1.05
+shader_parameter/tint = Color(0.95, 1, 1.04, 1)
+
+[node name="CRTOverlay" type="CanvasLayer"]
+layer = 100
+process_mode = 3
+
+[node name="Screen" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_crt")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
