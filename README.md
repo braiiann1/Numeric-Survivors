@@ -335,6 +335,8 @@ godot --path . res://scenes/main.tscn
 
 La escena inicial es el menú (`scenes/main_menu.tscn`), con **JUGAR**, **CÓMO JUGAR** y **SALIR**.
 
+*Para descargarlo basta con bajar la build de windows x86_64 que deje en la carpeta :)
+
 ---
 
 ## 🧭 Filosofía de diseño
